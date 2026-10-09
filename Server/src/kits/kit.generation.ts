@@ -2,10 +2,7 @@ import { KitModel } from '../models/kit.model.js';
 import { generateKit } from '../services/pipeline/generatekit.js';
 import type { GenerateKitInput } from '../services/pipeline/types.js';
 
-export async function runKitGeneration(
-  kitId: string,
-  input: GenerateKitInput,
-): Promise<void> {
+export async function runKitGeneration(kitId: string, input: GenerateKitInput): Promise<void> {
   await KitModel.updateOne(
     { _id: kitId },
     {
@@ -46,10 +43,7 @@ export async function runKitGeneration(
       },
     );
   } catch (error: unknown) {
-    console.error(
-      `Kit generation failed for ${kitId}:`,
-      error,
-    );
+    console.error(`Kit generation failed for ${kitId}:`, error);
 
     await KitModel.updateOne(
       { _id: kitId },

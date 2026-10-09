@@ -1,25 +1,15 @@
-import {
-  kitSchema,
-  type Kit,
-} from '@prepforge/shared';
+import { kitSchema, type Kit } from '@prepforge/shared';
 
-import type {
-  GenerateKitInput,
-  GenerateKitOptions,
-} from './types.js';
+import type { GenerateKitInput, GenerateKitOptions } from './types.js';
 
 async function reportProgress(
   options: GenerateKitOptions,
-  step: Parameters<
-    NonNullable<GenerateKitOptions['onProgress']>
-  >[0],
+  step: Parameters<NonNullable<GenerateKitOptions['onProgress']>>[0],
 ): Promise<void> {
   await options.onProgress?.(step);
 }
 
-function createStubKit(
-  input: GenerateKitInput,
-): Kit {
+function createStubKit(input: GenerateKitInput): Kit {
   const now = new Date().toISOString();
 
   return {
@@ -53,15 +43,12 @@ function createStubKit(
 
     schedule: {
       days_available: input.days,
-      days: Array.from(
-        { length: input.days },
-        (_, index) => ({
-          day: index + 1,
-          focus: '',
-          question_ids: [],
-          minutes: 0,
-        }),
-      ),
+      days: Array.from({ length: input.days }, (_, index) => ({
+        day: index + 1,
+        focus: '',
+        question_ids: [],
+        minutes: 0,
+      })),
     },
 
     coverage: {

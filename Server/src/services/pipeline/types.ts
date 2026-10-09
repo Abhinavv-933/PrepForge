@@ -7,11 +7,7 @@ export interface GenerateKitInput {
 }
 
 export type PipelineStep =
-  | 'initializing'
-  | 'researching'
-  | 'generating'
-  | 'validating'
-  | 'complete';
+  'initializing' | 'researching' | 'generating' | 'validating' | 'complete';
 
 export interface PipelineProgress {
   step: PipelineStep;
@@ -19,12 +15,7 @@ export interface PipelineProgress {
 }
 
 export interface GenerateKitOptions {
-  onProgress?: (
-    progress: PipelineProgress,
-  ) => Promise<void> | void;
+  onProgress?: (progress: PipelineProgress) => Promise<void> | void;
 }
 
-export type GenerateKit = (
-  input: GenerateKitInput,
-  options?: GenerateKitOptions,
-) => Promise<Kit>;
+export type GenerateKit = (input: GenerateKitInput, options?: GenerateKitOptions) => Promise<Kit>;
