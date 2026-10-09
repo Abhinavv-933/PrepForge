@@ -16,7 +16,8 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "typecheck": "npm run typecheck -w shared && npm run typecheck -w server && npm run typecheck -w web",
-    "test": "npm run test -w server"
+    "test": "npm run test -w server",
+    "evaluate": "tsx Server/src/batch/evaluate.ts"
   },
   "devDependencies": {
     "@eslint/js": "^9.0.0",

@@ -1,0 +1,132 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-10-09T19:08:35.354Z",
+  "kits": [
+    {
+      "id": "case-01",
+      "status": "ok",
+      "kit": {
+        "source": {
+          "company": "",
+          "company_url": "https://example.com",
+          "role": "",
+          "location": "",
+          "jd_chars": 290,
+          "researched_at": "2026-10-09T19:08:35.344Z",
+          "pages_used": [],
+          "notes": []
+        },
+        "company_brief": {
+          "summary": "",
+          "what_they_do": "",
+          "sources": []
+        },
+        "role": {
+          "title": "",
+          "seniority": "",
+          "responsibilities": [],
+          "requirements": []
+        },
+        "questions": [],
+        "flashcards": [],
+        "schedule": {
+          "days_available": 5,
+          "days": [
+            {
+              "day": 1,
+              "focus": "",
+              "question_ids": [],
+              "minutes": 0
+            },
+            {
+              "day": 2,
+              "focus": "",
+              "question_ids": [],
+              "minutes": 0
+            },
+            {
+              "day": 3,
+              "focus": "",
+              "question_ids": [],
+              "minutes": 0
+            },
+            {
+              "day": 4,
+              "focus": "",
+              "question_ids": [],
+              "minutes": 0
+            },
+            {
+              "day": 5,
+              "focus": "",
+              "question_ids": [],
+              "minutes": 0
+            }
+          ]
+        },
+        "coverage": {
+          "uncovered_requirement_ids": [],
+          "passes": 0
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "case-02",
+      "status": "ok",
+      "kit": {
+        "source": {
+          "company": "",
+          "company_url": "https://example.org",
+          "role": "",
+          "location": "",
+          "jd_chars": 240,
+          "researched_at": "2026-10-09T19:08:35.346Z",
+          "pages_used": [],
+          "notes": []
+        },
+        "company_brief": {
+          "summary": "",
+          "what_they_do": "",
+          "sources": []
+        },
+        "role": {
+          "title": "",
+          "seniority": "",
+          "responsibilities": [],
+          "requirements": []
+        },
+        "questions": [],
+        "flashcards": [],
+        "schedule": {
+          "days_available": 3,
+          "days": [
+            {
+              "day": 1,
+              "focus": "",
+              "question_ids": [],
+              "minutes": 0
+            },
+            {
+              "day": 2,
+              "focus": "",
+              "question_ids": [],
+              "minutes": 0
+            },
+            {
+              "day": 3,
+              "focus": "",
+              "question_ids": [],
+              "minutes": 0
+            }
+          ]
+        },
+        "coverage": {
+          "uncovered_requirement_ids": [],
+          "passes": 0
+        }
+      },
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+
+[
+  {
+    "id": "case-01",
+    "jd": "We are looking for a Full Stack Developer proficient in React.js, Node.js, Express.js, MongoDB, REST APIs, JavaScript, TypeScript, HTML, CSS, Git, and authentication. The candidate should understand frontend development, backend API design, database modeling, error handling, and debugging.",
+    "company_url": "https://example.com",
+    "days": 5
+  },
+  {
+    "id": "case-02",
+    "jd": "We are hiring a Frontend Developer with strong knowledge of React.js, TypeScript, JavaScript ES6+, HTML, CSS, responsive design, accessibility, React Hooks, state management, REST API integration, Git, and frontend performance optimization.",
+    "company_url": "https://example.org",
+    "days": 3
+  }
+]
